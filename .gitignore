@@ -1,0 +1,28 @@
+# VS Code
+.vscode/
+
+# environnement virtuel du dossier
+.venv/
+
+# Autres environnements virtuels possibles
+venv/
+
+# Fichiers Python compilés, ppython cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook backups
+.ipynb_checkpoints/
+
+# Données
+data/raw/
+*.csv
+
+# Logs
+*.log
+
+# MacOS / Windows fichiers système
+.DS_Store
+Thumbs.db
