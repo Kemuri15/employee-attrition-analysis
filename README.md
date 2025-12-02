@@ -1,16 +1,20 @@
 # Projet RH - Mini-projet
 
 ## 🎯 Objectif
-Explorer des données RH pour suivre 3 KPI simples.
+
+Explorer des données IBM HR Analytics Employee Attrition & Performance pour comprendre ce qui peut influencer l’attrition.
 
 ## ❓ Questions
-- Taux d'absentéisme mensuel
-- Turnover (départs / effectif moyen)
-- Ancienneté moyenne
+
+1. L’impact des conditions de travail (professionnelles) sur l’attrition
+2. L’impact des conditions de vie / vie personnelle sur l’attrition
+3. Le rôle de la satisfaction et de l’implication sur l’attrition et leur lien éventuel avec les conditions de vie ou de travail
+
 
 ## ✅ Definition of Done
+
 - 1 notebook propre
-- 2 graphiques
+- Un ensemble de visualisations pertinentes graphiques
 - 1 section "So What ?" avec 3 conclusions
 
 ## ▶️ Rejouer
