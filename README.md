@@ -7,7 +7,7 @@ La maîtrise de l’attrition constitue aujourd’hui un enjeu majeur pour les s
 La fidélisation des collaborateurs devient ainsi un levier clé : la capacité d’une entreprise à retenir ses talents conditionne directement sa performance opérationnelle, son engagement interne et sa compétitivité.
 Disposer d’une analyse claire des facteurs d’attrition permet d’orienter les décisions RH, de prioriser les actions et de mettre en place des leviers de fidélisation efficaces.
 
-## 🎯 Objectif
+## Objectif business
 
 Analyser le dataset IBM HR Analytics Employee Attrition & Performance afin d’identifier les facteurs associés à l’attrition et proposer des pistes d’action RH pour réduire les départs et augmenter la fidelisation comme levier de performance
 
@@ -18,15 +18,21 @@ Proposer des recommandations permettant d’affiner la compréhension des levier
 
 Quels sont les effets individuels et combinés des conditions de travail, des facteurs personnels et du niveau de satisfaction et d’implication sur l’attrition des salariés ?
 
-## ❓ Questions d'analyse
 
-1. Conditions de travail : Dans quelle mesure influencent-elles l’attrition ?
+## Questions d’analyse
 
-2. Conditions de vie personnelle : Les contraintes personnelles contribuent-elles aux départs ?
+**1. Conditions de travail**  
+Dans quelle mesure les conditions de travail influencent-elles l’attrition ?
 
-3. Satisfaction & implication :
-    * Le niveau de satisfaction prédit-il l’attrition ?
-    * La satisfaction dépend-elle davantage des conditions de travail ou d’éléments personnels ?
+**2. Conditions personnelles**  
+Quel est l’impact des conditions de vie personnelles sur le départ des collaborateurs ?
+
+**3. Satisfaction et implication**  
+Comment le niveau de satisfaction et d’implication contribue-t-il à l’attrition ?  
+Les conditions de travail et les facteurs personnels influencent-ils le niveau de satisfaction et d’implication ?
+
+
+
 
 ## ✅ Definition of Done
 
