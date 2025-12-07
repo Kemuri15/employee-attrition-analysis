@@ -21,11 +21,11 @@ Quels sont les effets individuels et combinés des conditions de travail, des fa
 
 ## Questions d’analyse
 
-**1. Conditions de travail**  
-Dans quelle mesure les conditions de travail influencent-elles l’attrition ?
-
-**2. Conditions personnelles**  
+**1. Conditions personnelles**  
 Quel est l’impact des conditions de vie personnelles sur le départ des collaborateurs ?
+
+**2. Conditions de travail**  
+Dans quelle mesure les conditions de travail influencent-elles l’attrition ?
 
 **3. Satisfaction et implication**  
 Comment le niveau de satisfaction et d’implication contribue-t-il à l’attrition ?  
