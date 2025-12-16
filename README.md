@@ -33,7 +33,7 @@ Les conditions de travail et les facteurs personnels influencent-ils le niveau d
 
 ## Données utilisées 
 
-L’analyse repose sur le jeu de données **IBM HR Analytics Employee Attrition & Performance**, un dataset largement utilisé dans les projets d’analyse RH et de People Analytics.
+L’analyse repose sur le jeu de données **IBM HR Analytics Employee Attrition & Performance**, un dataset largement utilisé dans les projets d’analyse RH et de People Analytics,il s'agit d'un ensemble de données fictif créé par des data scientists d’IBM.
 
 Ce jeu de données contient des informations individuelles sur les employés, incluant :
 - des caractéristiques personnelles (âge, genre, situation familiale, niveau et domaine d’éducation, distance domicile–travail, mobilité professionnelle, etc.) ;
