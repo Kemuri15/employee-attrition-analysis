@@ -31,7 +31,42 @@ Dans quelle mesure les conditions de travail influencent-elles l’attrition ?
 Comment le niveau de satisfaction et d’implication contribue-t-il à l’attrition ?  
 Les conditions de travail et les facteurs personnels influencent-ils le niveau de satisfaction et d’implication ?
 
+## Données utilisées 
 
+L’analyse repose sur le jeu de données **IBM HR Analytics Employee Attrition & Performance**, un dataset largement utilisé dans les projets d’analyse RH et de People Analytics.
+
+Ce jeu de données contient des informations individuelles sur les employés, incluant :
+- des caractéristiques personnelles (âge, genre, situation familiale, niveau et domaine d’éducation, distance domicile–travail, mobilité professionnelle, etc.) ;
+- des variables liées aux conditions de travail (poste, département, ancienneté, rémunération, environnement de travail, etc.) ;
+- des indicateurs de satisfaction et d’implication ;
+- une variable cible indiquant le départ ou non de l’employé (**Attrition**).
+
+Le dataset comporte **1 470 employés** et **plus de 30 variables**, permettant d’explorer différents axes explicatifs de l’attrition.
+
+Dans le cadre de ce projet, une sélection de variables pertinentes est effectuée et certaines d’entre elles sont transformées (création de tranches, regroupement de catégories, renommage des modalités) afin de faciliter l’analyse exploratoire et l’interprétation RH.
+
+
+## Exploration des données (EDA)
+
+Une analyse exploratoire des données (EDA) est menée afin de mieux comprendre la structure du jeu de données et la composition de la population étudiée.
+
+L’EDA s’appuie sur :
+- des tableaux de proportions ;
+- des visualisations graphiques simples (principalement des barplots) ;
+- une analyse descriptive progressive, sans interprétation prématurée.
+
+L’exploration est organisée par **axes thématiques**, notamment :
+- les caractéristiques personnelles des employés (âge, genre, situation familiale, niveau et domaine d’éducation, distance domicile–travail, mobilité professionnelle) ;
+- les conditions de travail ;
+- les indicateurs de satisfaction et d’implication.
+
+Certaines variables numériques sont regroupées en catégories pertinentes d’un point de vue RH (tranches d’âge, distance domicile–travail, nombre d’entreprises précédemment travaillées) afin de rendre les analyses plus lisibles et exploitables.
+
+L’analyse exploratoire est menée en deux temps :
+1. une analyse individuelle des variables pour décrire la population ;
+2. des comparaisons simples entre ces variables et l’attrition afin d’identifier des différences de comportement entre les groupes.
+
+Les résultats détaillés de cette exploration sont présentés et illustrés dans le notebook associé au projet.
 
 
 ## ✅ Definition of Done
