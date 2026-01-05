@@ -67,8 +67,8 @@ L’analyse exploratoire est menée en quatres temps :
 1. une analyse individuelle des variables pour décrire la population ;
 2. des comparaisons simples entre ces variables et l’attrition afin d’identifier des différences de comportement entre les groupes.
 3. une analyse des relations entre variables pour identifier certains patterns.
-4. 
-5. les résultats clés
+4. les résultats clés
+
 
 Les résultats détaillés de cette exploration sont présentés et illustrés dans le notebook associé au projet.
 
