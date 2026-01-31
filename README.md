@@ -29,7 +29,7 @@ Dans quelle mesure les conditions de travail influencent-elles l’attrition ?
 
 **3. Satisfaction et implication**  
 Comment le niveau de satisfaction et d’implication contribue-t-il à l’attrition ?  
-Les conditions de travail et les facteurs personnels influencent-ils le niveau de satisfaction et d’implication ?
+Les conditions de travail et les facteurs personnels influencent-ils ces dimensions subjectives ?
 
 ## Données utilisées 
 
