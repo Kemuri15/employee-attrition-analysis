@@ -70,6 +70,21 @@ L’analyse exploratoire est menée en quatres temps :
 4. les résultats clés
 
 
+
+
+**Modèle Axe 3 – “subjectif”**
+
+Approche méthodologique – Axe 3
+
+L’analyse de la satisfaction et de l’implication repose sur une approche descriptive mixte :
+
+- l’étude des distributions par niveau (tableaux de proportions et graphiques) afin de visualiser la structure des perceptions,
+- et le calcul de scores moyens, utilisés comme indicateurs synthétiques permettant de comparer les groupes, notamment selon le statut d’attrition.
+
+Cette double lecture permet de saisir à la fois la répartition des perceptions et les tendances globales associées aux comportements de départ.
+
+
+
 Les résultats détaillés de cette exploration sont présentés et illustrés dans le notebook associé au projet.
 
 
