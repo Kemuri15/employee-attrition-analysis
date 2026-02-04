@@ -1,0 +1,109 @@
+<h1
+id="projet-rh-analyse-de-lattrition-et-leviers-de-fidélisation">Projet
+RH – Analyse de l’Attrition et Leviers de Fidélisation</h1>
+<p>Un enjeu clé de performance</p>
+<h2 id="contexte-rh">Contexte RH</h2>
+<p>La maîtrise de l’attrition constitue aujourd’hui un enjeu majeur pour
+les services RH : elle permet de limiter les coûts liés aux départs, de
+stabiliser les équipes et de mieux gérer la charge de travail. La
+fidélisation des collaborateurs devient ainsi un levier clé : la
+capacité d’une entreprise à retenir ses talents conditionne directement
+sa performance opérationnelle, son engagement interne et sa
+compétitivité. Disposer d’une analyse claire des facteurs d’attrition
+permet d’orienter les décisions RH, de prioriser les actions et de
+mettre en place des leviers de fidélisation efficaces.</p>
+<h2 id="objectif-business">Objectif business</h2>
+<p>Analyser le dataset IBM HR Analytics Employee Attrition &amp;
+Performance afin d’identifier les facteurs associés à l’attrition et
+proposer des pistes d’action RH pour réduire les départs et augmenter la
+fidelisation comme levier de performance</p>
+<p>Identifier les facteurs d’attrition à partir de l’analyse du dataset
+IBM HR Analytics afin d’orienter les décisions RH. Proposer des
+recommandations permettant d’affiner la compréhension des leviers de
+fidélisation, enjeu essentiel de la performance sociale et globale de
+l’entreprise.</p>
+<h2 id="problématique">Problématique</h2>
+<p>Quels sont les effets individuels et combinés des conditions de
+travail, des facteurs personnels et du niveau de satisfaction et
+d’implication sur l’attrition des salariés ?</p>
+<h2 id="questions-danalyse">Questions d’analyse</h2>
+<p><strong>1. Conditions personnelles</strong><br />
+Quel est l’impact des conditions de vie personnelles sur le départ des
+collaborateurs ?</p>
+<p><strong>2. Conditions de travail</strong><br />
+Dans quelle mesure les conditions de travail influencent-elles
+l’attrition ?</p>
+<p><strong>3. Satisfaction et implication</strong><br />
+Comment le niveau de satisfaction et d’implication contribue-t-il à
+l’attrition ?<br />
+Les conditions de travail et les facteurs personnels influencent-ils ces
+dimensions subjectives ?</p>
+<h2 id="données-utilisées">Données utilisées</h2>
+<p>L’analyse repose sur le jeu de données <strong>IBM HR Analytics
+Employee Attrition &amp; Performance</strong>, un dataset largement
+utilisé dans les projets d’analyse RH et de People Analytics,il s’agit
+d’un ensemble de données fictif créé par des data scientists d’IBM.</p>
+<p>Ce jeu de données contient des informations individuelles sur les
+employés, incluant : - des caractéristiques personnelles (âge, genre,
+situation familiale, niveau et domaine d’éducation, distance
+domicile–travail, mobilité professionnelle, etc.) ; - des variables
+liées aux conditions de travail (poste, département, ancienneté,
+rémunération, environnement de travail, etc.) ; - des indicateurs de
+satisfaction et d’implication ; - une variable cible indiquant le départ
+ou non de l’employé (<strong>Attrition</strong>).</p>
+<p>Le dataset comporte <strong>1 470 employés</strong> et <strong>plus
+de 30 variables</strong>, permettant d’explorer différents axes
+explicatifs de l’attrition.</p>
+<p>Dans le cadre de ce projet, une sélection de variables pertinentes
+est effectuée et certaines d’entre elles sont transformées (création de
+tranches, regroupement de catégories, renommage des modalités) afin de
+faciliter l’analyse exploratoire et l’interprétation RH.</p>
+<h2 id="exploration-des-données-eda">Exploration des données (EDA)</h2>
+<p>Une analyse exploratoire des données (EDA) est menée afin de mieux
+comprendre la structure du jeu de données et la composition de la
+population étudiée.</p>
+<p>L’EDA s’appuie sur : - des tableaux de proportions ; - des
+visualisations graphiques simples (principalement des barplots) ; - une
+analyse descriptive progressive, sans interprétation prématurée. - les
+résultats clés</p>
+<p>L’exploration est organisée par <strong>axes thématiques</strong>,
+notamment : - les caractéristiques personnelles des employés (âge,
+genre, situation familiale, niveau et domaine d’éducation, distance
+domicile–travail, mobilité professionnelle) ; - les conditions de
+travail ; - les indicateurs de satisfaction et d’implication.</p>
+<p>Certaines variables numériques sont regroupées en catégories
+pertinentes d’un point de vue RH (tranches d’âge, distance
+domicile–travail, nombre d’entreprises précédemment travaillées) afin de
+rendre les analyses plus lisibles et exploitables.</p>
+<p>L’analyse exploratoire est menée en quatres temps : 1. une analyse
+individuelle des variables pour décrire la population ; 2. des
+comparaisons simples entre ces variables et l’attrition afin
+d’identifier des différences de comportement entre les groupes. 3. une
+analyse des relations entre variables pour identifier certains patterns.
+4. les résultats clés</p>
+<p><strong>Modèle Axe 3 – “subjectif”</strong></p>
+<p>Approche méthodologique – Axe 3</p>
+<p>L’analyse de la satisfaction et de l’implication repose sur une
+approche descriptive mixte :</p>
+<ul>
+<li>l’étude des distributions par niveau (tableaux de proportions et
+graphiques) afin de visualiser la structure des perceptions,</li>
+<li>et le calcul de scores moyens, utilisés comme indicateurs
+synthétiques permettant de comparer les groupes, notamment selon le
+statut d’attrition.</li>
+</ul>
+<p>Cette double lecture permet de saisir à la fois la répartition des
+perceptions et les tendances globales associées aux comportements de
+départ.</p>
+<p>Les résultats détaillés de cette exploration sont présentés et
+illustrés dans le notebook associé au projet.</p>
+<h2 id="definition-of-done">✅ Definition of Done</h2>
+<ul>
+<li>Un notebook propre et structuré</li>
+<li>Quelques visualisations pertinentes graphiques</li>
+<li>1 section “So What ?” contenant trois conclusions et recommandations
+RH</li>
+</ul>
+<h2 id="rejouer">▶️ Rejouer</h2>
+<p>Activer l’environnement puis ouvrir
+<code>notebooks/01_rh_exploration.ipynb</code></p>
