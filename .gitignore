@@ -27,6 +27,7 @@ data/raw/
 .DS_Store
 Thumbs.db
 
-# html
+# Exports temporaires
 
 *.html
+*.pdf
