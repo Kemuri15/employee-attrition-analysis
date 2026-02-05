@@ -26,3 +26,7 @@ data/raw/
 # MacOS / Windows fichiers système
 .DS_Store
 Thumbs.db
+
+# html
+
+*.html
