@@ -1,6 +1,11 @@
 # Projet RH – Analyse de l’Attrition et Leviers de Fidélisation
 Un enjeu clé de performance
 
+> **TL;DR**  
+> Analyse exploratoire RH (EDA) du dataset IBM HR Analytics pour comprendre les facteurs associés à l’attrition.  
+> Le projet met en évidence des situations de sur- et sous-exposition et propose des leviers RH, dans un cadre strictement descriptif et non causal.
+
+
 ## Contexte RH
 
 La maîtrise de l’attrition constitue aujourd’hui un enjeu majeur pour les services RH : elle permet de limiter les coûts liés aux départs, de stabiliser les équipes et de mieux gérer la charge de travail.
@@ -34,6 +39,12 @@ Les conditions de travail et les facteurs personnels influencent-ils ces dimensi
 
 L’analyse repose sur le jeu de données IBM HR Analytics Employee Attrition & Performance, un dataset fictif conçu par IBM, contenant 1 470 employés et plus de 30 variables RH.
 
+Ce jeu de données contient des informations individuelles sur les employés, incluant :
+- des caractéristiques personnelles (age, sexe, statut marital, etc.), 
+- des variables liées aux conditions de travail (poste, département, ancienneté, rémunération, environnement de travail, etc.)
+- des indicateurs de satisfaction et d’implication
+- une variable cible indiquant le départ ou non de l’employé (**Attrition**)
+
 L’approche adoptée est une analyse exploratoire et descriptive (EDA), visant à identifier des relations entre variables sans établir de liens de causalité.
 
 L’analyse s’appuie principalement sur :
@@ -45,26 +56,36 @@ Certaines variables ont été transformées (tranches, regroupements, renommage)
 
 ## Organisation du projet
 
-L’analyse est structurée autour de trois axes complémentaires :
+Structure analytique
 
-1. Conditions personnelles  
-2. Conditions de travail  
-3. Satisfaction et implication  
+- Axe 1 : Qui part ?
+- Axe 2 : Dans quelles conditions ?
+- Axe 3 : Pourquoi subjectivement ?
 
 Chaque axe comprend :
-- une analyse descriptive des variables,
-- une analyse croisée avec l’attrition,
+- une analyse descriptive des variables pour décrire la population, le contexte organisationnels, le ressenti des salariés,
+- une analyse croisée avec l’attrition pour identifier des différences de comportement de groupe, des configurations organisationnelles,
 - Une analyse des relations entre variables pour identifier certains patterns
 - une synthèse des résultats clés.
 
 Une synthèse transversale permet ensuite de relier ces axes et d’identifier des configurations de risque.
 
+## Comment naviguer dans le projet
+
+Les notebooks sont conçus pour être lus dans l’ordre suivant :
+
+1. `01_rh_exploration.ipynb` : exploration initiale du dataset
+2. `02_create_interim_tableaux.ipynb` : structuration des tables intermédiaires
+3. `03_...` à `05_...` : analyses par axe (préparation et analyse réalisées dans chaque notebook)
+4. `06_...` : synthèse transversale et recommandations RH
+
+Chaque notebook charge et enregistre les données via des chemins relatifs (`pathlib`), garantissant la reproductibilité du projet.
 
 ## Principaux enseignements
 
 L’attrition ne résulte pas d’un facteur unique, mais de la combinaison :
 
-- de phases de transition du parcours de vie (jeune âge),
+- De phases de transition du parcours de vie (jeune âge),
 - de situations professionnelles peu stabilisées (poste récent, faible ancienneté, relation managériale récente),
 - de conditions organisationnelles spécifiques (notamment la rémunération),
 - et de perceptions subjectives progressivement dégradées (satisfaction, engagement).
@@ -77,66 +98,36 @@ Cette lecture transversale met en évidence des trajectoires de départ construi
 - Salariés commerciaux en forte mobilité
 
 
-
-
-
-
 ## Leviers RH identifiés
 
 ###  Les leviers opérationnels
 
-**Renforcer l’onboarding managérial et proposer du mentorat entre salariés**
+**Renforcer l’onboarding managérial et le mentorat**  
+Sécuriser les premières phases du parcours collaborateur, identifiées comme périodes à risque accru d’attrition.
 
-Ce levier vise à sécuriser les dynamiques de parcours des salariés dès les premières phases de leur intégration.
+**Accompagnement managérial ciblé**  
+Stabiliser les relations manager-collaborateur, levier clé de satisfaction et d’engagement.
 
-Le renforcement de l’onboarding existant, combiné au développement de dispositifs de mentorat entre salariés, permettrait de mieux accompagner cette phase critique et de réduire les risques de décrochage précoce.
+**Vigilance sur les heures supplémentaires**  
+Limiter les effets cumulatifs dans des situations déjà fragilisées.
 
-**Accompagnement managérial**
+**Reconnaissance non salariale**  
+Agir sur les mécanismes intermédiaires de l’attrition (satisfaction, engagement).
+*(feedback managérial, reconnaissance symbolique, visibilité des contributions)*
 
-Ce levier vise à sécuriser les premières relations manager-collaborateur, qui influencent fortement la perception du travail, l’engagement et la satisfaction globale.
-Les relations managériales récentes constituent une zone de vulnérabilité, tant du côté du collaborateur que du manager, et peuvent contribuer à une dégradation progressive de l’engagement.
-
-Un accompagnement ciblé permettrait de stabiliser la relation managériale et de prévenir les situations à risque.
-
-**Vigilance sur le recours aux heures supplémentaires**
-
-Ce levier vise à limiter le cumul de facteurs susceptibles d’aggraver des situations déjà fragilisées.
-Les heures supplémentaires apparaissent comme un facteur aggravant, plutôt que comme un déclencheur direct de départ notamment lorsqu’elles s’ajoutent à d’autres facteurs de fragilité (ancienneté, faible satisfaction, poste sous tension).
-
-Une vigilance accrue sur ce sujet permettrait de prévenir les effets cumulatifs pouvant conduire à une décision de départ 
-
-**Reconnaissance non salariale** 
-
-Ce levier immatériel vise à agir sur la perception et le ressenti des salariés, en dehors des mécanismes de reconnaissance salariale.
-Les analyses relatives à la satisfaction et à l’engagement montrent que ces dimensions jouent un rôle de mécanisme intermédiaire dans l’attrition.
-
-Des actions de reconnaissance managériale ou d’autres dispositifs non monétaires pourraient ainsi renforcer la perception de valeur et contribuer à la fidélisation.
-
-
-##  Levier structurelle
+##  Levier structurels
 
 **Politique d’intégration, de mentorat et de suivi des nouveaux salariés et des mobilités internes**
-
-Une politique d’intégration et de mentorat vise à sécuriser les premières années de parcours en offrant un cadre rassurant, un accompagnement personnalisé et un soutien relationnel complémentaire au management. Elle contribue ainsi à renforcer l’engagement durable des collaborateurs et à réduire l’attrition des populations en début de parcours.
-
-Dans une logique de pérennisation des leviers opérationnels, ce levier contribuera à la sécurisation des dynamiques de parcours lors des premières années, tant sur les plans professionnel, relationnel et d’intégration à la culture d’entreprise.
-Il participe également à l’amélioration de l’expérience collaborateur et au renforcement de la cohésion et de la culture d’entreprise, en favorisant les liens intergénérationnels et intermétiers.
-
+sécuriser des dynamiques de parcours lors des premières années ( professionnel, relationnel et la culture d’entreprise).
+Améliorer l’expérience collaborateur et renforcer la cohésion et de la culture d’entreprise.
 
 **Modèle managérial et plan de formation** 
 
-Afin d’ancrer durablement les pratiques managériales identifiées, ce levier vise à définir un cadre managérial commun au sein de l’organisation (valeurs, posture, pratiques clés) et à l’ancrer durablement par la formation.
-
-Il permettrait un alignement entre la stratégie de réduction des risques d’attrition, les pratiques managériales et la culture de l’organisation.
-
+Définir un cadre managérial commun (valeurs, posture, pratiques clés) et à l’ancrer durablement par la formation.
 
 **Politique salariale ciblée sur les bas salaires** 
  
-Ce levier vise à renforcer la rétention des populations les plus exposées au risque de départ, en particulier les salariés à bas salaire.
-La rémunération constitue un facteur d’influence majeur du turnover.
-
-Une politique salariale ciblée permettrait non seulement de renforcer la rétention, mais également d’assurer une meilleure cohérence des pratiques salariales, d’anticiper les risques sociaux et de soutenir durablement la satisfaction et l’engagement.
-
+Renforcer la rétention des populations les plus exposées au risque de départ, en particulier les salariés à bas salaire.
 
 ## Limites et perspectives
 
@@ -144,8 +135,7 @@ Cette analyse présente plusieurs limites inhérentes à son cadre méthodologiq
 
 
 **Limites liées à la méthode (EDA)**
-Cette analyse repose sur une approche exploratoire et descriptive, basée sur l’observation de relations entre variables.
-Elle ne permet pas d’établir de liens de causalité entre les facteurs étudiés et l’attrition.
+Cette analyse ne permet pas d’établir de liens de causalité entre les facteurs étudiés et l’attrition.
 
 De plus, l’absence de modélisation prédictive ne permet pas d’estimer l’impact relatif de chaque facteur ni de prédire le risque individuel de départ.
 
@@ -167,11 +157,17 @@ Enfin, ces éléments limitent la généralisation des résultats à d’autres 
 
 **Perspectives**
 
-modélisation logistique
+- **Modélisation logistique / Analyse multivarié ou segmentation**
 
-données longitudinales
+Il serait pertinent de recourir à des méthodes de modélisation statistique, telles que la régression logistique, afin d’estimer l’effet combiné des facteurs identifiés sur l’attrition. Pour affiner la compréhension des profils et des configurations à risques, des analyses multivariées intégrant des interactions entre variables ou des segmentations seraient nécessaires.
 
-distinction turnover volontaire / involontaire
+- **Données longitudinales**
+
+Cela permettrait de compléter l’analyse par une approche temporelle, en étudiant l’évolution des parcours, de la satisfaction et des comportements de départ dans le temps (limités du fait de la fictivité des données).
+
+- **Suivis des leviers identifiés dans le temps/ indicateurs**
+
+Cela permettrait d’évaluer l’impact des actions mises en œuvre, d’ajuster les dispositifs d’accompagnement et de renforcer une démarche proactive de prévention de l’attrition.
 
 
 ## Conclusion – So what ?
@@ -183,50 +179,22 @@ Une approche RH efficace doit donc dépasser les actions isolées et s’inscrir
 L’analyse exploratoire constitue ainsi une base solide pour orienter des actions RH plus fines et, à terme, des analyses prédictives.
 
 
-## Liens des  Notebooks du projet
+## Liens des notebooks du projet
 
-1. **Exploration initiale des données**
-   - `01_rh_exploration.ipynb`  
-   Analyse globale du dataset, compréhension des variables et premières distributions.
-
-2. **Préparation et structuration des données**
-   - `02_create_interim_tableaux.ipynb`  
-   Nettoyage, création de variables dérivées (tranches, labels) et construction des datasets analytiques par axe.
-
-3. **Analyse – Axe 1 : Conditions personnelles**
-   - `03_axe_1_conditions_personnelles.ipynb`
-
-4. **Analyse – Axe 2 : Conditions de travail**
-   - `04_axe_2_conditions_travail.ipynb`
-
-5. **Analyse – Axe 3 : Satisfaction et implication**
-   - `05_axe_3_satisfaction_implication.ipynb`
-
-6. **Synthèse transversale et recommandations RH**
-   - `06_synthese_transversale_recommandations.ipynb`
+1. [Exploration initiale des données](notebooks/01_rh_exploration.ipynb)
+2. [Définition des Axes selon les variables](notebooks/02_create_interim_tableaux.ipynb)
+3. [Axe 1 – Conditions personnelles](notebooks/03_axe_1_conditions_personnelles.ipynb)
+4. [Axe 2 – Conditions de travail](notebooks/04_axe_2_conditions_travail.ipynb)
+5. [Axe 3 – Satisfaction et implication](notebooks/05_axe_3_satisfaction_implication.ipynb)
+6. [Synthèse transversale et recommandations RH](notebooks/06_synthese_transversale_recommandations.ipynb)
 
 
-**Modèle Axe 3 – “subjectif”**
+## Definition of Done
 
-Approche méthodologique – Axe 3
-
-L’analyse de la satisfaction et de l’implication repose sur une approche descriptive mixte :
-
-- l’étude des distributions par niveau (tableaux de proportions et graphiques) afin de visualiser la structure des perceptions,
-- et le calcul de scores moyens, utilisés comme indicateurs synthétiques permettant de comparer les groupes, notamment selon le statut d’attrition.
-
-Cette double lecture permet de saisir à la fois la répartition des perceptions et les tendances globales associées aux comportements de départ.
-
-
-
-Les résultats détaillés de cette exploration sont présentés et illustrés dans le notebook associé au projet.
-
-
-## ✅ Definition of Done
-
-- Un notebook propre et structuré
-- Quelques visualisations pertinentes graphiques
-- 1 section "So What ?" contenant trois conclusions et recommandations RH
-
-## ▶️ Rejouer
-Activer l'environnement puis ouvrir `notebooks/01_rh_exploration.ipynb`
+- Données nettoyées et documentées  
+- Analyse exploratoire descriptive complète  
+- Identification des situations de sur/sous-exposition  
+- Relations présentées sans interprétation causale  
+- Visualisations claires  
+- Recommandation RH exploitable
+- Limites méthodologiques explicites  
