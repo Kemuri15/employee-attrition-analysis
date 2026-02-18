@@ -1,80 +1,17 @@
-# Projet RH - Analyse de l'Attrition et Leviers de Fidélisation
+# Projet RH – Analyse de l'Attrition et Leviers de Fidélisation
 **Un enjeu clé de performance**
 
----
+***
 
 ## TL;DR
 
-L'objectif de ce projet est de comprendre les facteurs associés à l'attrition et de proposer des leviers RH.
 
-L'analyse s'appuie sur trois axes thématiques :
-**Qui part ?**, **Dans quel contexte ?** et **Pourquoi subjectivement ?**.
 
-Le constat clé est que l'attrition est un phénomène multifactoriel et progressif, résultant de l'interaction entre ces différentes dimensions.
+> Analyse exploratoire RH (EDA) du dataset IBM HR Analytics pour comprendre les facteurs associés à l'attrition.  
 
-L'approche RH doit ainsi s'inscrire dans une logique de prévention ciblée plutôt que dans des actions isolées.
+> Le projet met en évidence des situations de sur- et sous-exposition et propose des leviers RH, dans un cadre strictement descriptif et non causal.
 
----
-
-## Résumé stratégique
-
-### Problématique
-
-> Quels sont les effets individuels et combinés des conditions de travail, des facteurs personnels et du niveau de satisfaction et d'implication sur l'attrition des salariés ?
-
-### Approche analytique
-
-Pour chaque axe, une analyse exploratoire descriptive a été menée afin de décrire la population, le contexte organisationnel et le ressenti des salariés.
-
-Les variables ont ensuite été croisées avec l'attrition afin d'identifier des différences de comportements et des configurations à risque.
-
-Une synthèse transversale a enfin permis de relier les axes et de mettre en évidence des dynamiques communes, dans un cadre strictement descriptif et non causal.
-
-### Constats clés 
-
-- L'attrition est un phénomène multifactoriel et progressif, et non un événement isolé.
-
-- Les trajectoires de départ se construisent dans le temps, à travers l'accumulation de facteurs individuels, organisationnels et subjectifs.
-
-- Les perceptions subjectives jouent un rôle intermédiaire cumulatif : elles traduisent l'accumulation de tensions plutôt qu'un déclencheur immédiat du départ.
-
-- Certaines phases de parcours, notamment les premières années ou les périodes de transition, constituent des zones de vulnérabilité accrues.
-
-### Leviers RH identifiés
-
-- Sécuriser les phases de transition, notamment lors des premières années et des mobilités internes.
-
-- Stabiliser l'environnement organisationnel à travers le management, la charge de travail et les politiques de rémunération.
-
-- Agir sur les mécanismes intermédiaires d'attrition en renforçant la reconnaissance et l'engagement.
-
-- Mettre en place une logique de prévention ciblée plutôt que des actions isolées.
-
-### Limites 
-
-Cette analyse est strictement descriptive : aucun lien de causalité n'est établi et l'absence de modélisation prédictive limite l'estimation de l'impact relatif des facteurs et du risque individuel.
-
-Certaines dimensions structurantes ne sont pas mesurées, ce qui implique une lecture prudente des résultats.
-
-Enfin, le jeu de données étant fictif et limité à un contexte spécifique à un instant donné, la généralisation des résultats reste restreinte.
-
-### Outils
-Python (pandas, numpy), matplotlib, seaborn, Jupyter Notebook, VS Code.
-
----
-
-## Liens des notebooks du projet
-
-1. [Exploration initiale des données](notebooks/01_rh_exploration.ipynb)
-2. [Définition des axes selon les variables](notebooks/02_create_interim_tableaux.ipynb)
-3. [Axe 1 – Conditions personnelles](notebooks/03_axe_1_conditions_personnelles.ipynb)
-4. [Axe 2 – Conditions de travail](notebooks/04_axe_2_conditions_travail.ipynb)
-5. [Axe 3 – Satisfaction et implication](notebooks/05_axe_3_satisfaction_implication.ipynb)
-6. [Synthèse transversale et recommandations RH](notebooks/06_synthese_transversale_recommandations.ipynb)
-
----
-
-# Analyse détaillée
+***
 
 ## Contexte RH
 
@@ -84,19 +21,19 @@ La fidélisation des collaborateurs devient ainsi un levier clé : la capacité 
 
 Disposer d'une analyse claire des facteurs d'attrition permet d'orienter les décisions RH, de prioriser les actions et de mettre en place des leviers de fidélisation efficaces.
 
----
+***
 
 ## Objectif business
 
-Analyser le dataset IBM HR Analytics Employee Attrition & Performance dans le but de comprendre les facteurs associés à l'attrition et d'éclairer les décisions RH et d'orienter les leviers de fidélisation, enjeu essentiel de la performance sociale et globale de l'entreprise.
+Analyser le dataset IBM HR Analytics Employee Attrition & Performance afin de comprendre les facteurs associés à l'attrition afin d'éclairer les décisions RH et d'orienter les leviers de fidélisation, enjeu essentiel de la performance sociale et globale de l'entreprise
 
----
+***
 
 ## Problématique
 
 Quels sont les effets individuels et combinés des conditions de travail, des facteurs personnels et du niveau de satisfaction et d'implication sur l'attrition des salariés ?
 
----
+***
 
 ## Questions d'analyse
 
@@ -110,7 +47,7 @@ Dans quelle mesure les conditions de travail influencent-elles l'attrition ?
 Comment le niveau de satisfaction et d'implication contribue-t-il à l'attrition ?  
 Les conditions de travail et les facteurs personnels influencent-ils ces dimensions subjectives ?
 
----
+***
 
 ## Données et approche analytique
 
@@ -131,9 +68,21 @@ L'analyse s'appuie principalement sur :
 
 Certaines variables ont été transformées (tranches, regroupements, renommage) afin de faciliter l'interprétation RH.
 
----
+***
 
-## Comment naviguer dans le projet
+## Organisation du projet
+
+L'analyse s'appuie sur trois axes thématiques :
+**Qui part ?**, **Dans quel contexte ?** et **Pourquoi subjectivement ?**.
+
+Pour chaque axe, une analyse exploratoire descriptive a été menée afin de décrire la population, le contexte organisationnel et le ressenti des salariés.
+
+Les variables ont ensuite été croisées avec l'attrition afin d'identifier des différences de comportement et des configurations à risque.
+
+Une synthèse transversale a enfin permis de relier les axes et de mettre en évidence des dynamiques communes, dans un cadre strictement descriptif et non causal.
+
+
+### Comment naviguer dans le projet
 
 Les notebooks sont conçus pour être lus dans l'ordre suivant :
 
@@ -144,7 +93,7 @@ Les notebooks sont conçus pour être lus dans l'ordre suivant :
 
 Chaque notebook charge et enregistre les données via des chemins relatifs (`pathlib`), garantissant la reproductibilité du projet.
 
----
+***
 
 ## Principaux enseignements
 
@@ -163,7 +112,7 @@ Cette lecture transversale met en évidence des trajectoires de départ construi
 - Salariés expérimentés en phase de transition
 - Salariés commerciaux en forte mobilité
 
----
+***
 
 ## Leviers RH identifiés
 
@@ -175,8 +124,8 @@ Les leviers identifiés se distinguent entre actions opérationnelles à impact 
 Sécuriser les premières phases du parcours collaborateur, identifiées comme périodes à risque accru d'attrition.
 
 - **Politique d'intégration, de mentorat et de suivi des nouveaux salariés et des mobilités internes**
-Sécuriser des dynamiques de parcours lors des premières années (professionnel, relationnel et culturel).
-Améliorer l'expérience collaborateur et renforcer la cohésion et la culture d'entreprise.
+Sécuriser des dynamiques de parcours lors des premières années ( professionnel, relationnel et culturel).
+Améliorer l'expérience collaborateur et renforcer la cohésion et de la culture d'entreprise.
 
 ### Management
 
@@ -186,7 +135,7 @@ Stabiliser les relations manager-collaborateur, levier clé de satisfaction et d
 - **Modèle managérial et plan de formation**
 Définir un cadre managérial commun (valeurs, posture, pratiques clés) et à l'ancrer durablement par la formation.
 
-### Engagement et conditions de travail 
+### Mécanisme intermédiaire 
 
 - **Reconnaissance non salariale**
 Agir sur les mécanismes intermédiaires de l'attrition (satisfaction, engagement).
@@ -200,7 +149,7 @@ Limiter les effets cumulatifs dans des situations déjà fragilisées.
 - **Politique salariale ciblée sur les bas salaires**
 Renforcer la rétention des populations les plus exposées au risque de départ, en particulier les salariés à bas salaire.
 
----
+***
 
 ## Limites et perspectives
 
@@ -230,7 +179,7 @@ Enfin, ces éléments limitent la généralisation des résultats à d'autres or
 
 **Perspectives**
 
-- **Modélisation logistique / Analyse multivariée ou segmentation**
+- **Modélisation logistique / Analyse multivarié ou segmentation**
 
 Il serait pertinent de recourir à des méthodes de modélisation statistique, telles que la régression logistique, afin d'estimer l'effet combiné des facteurs identifiés sur l'attrition. Pour affiner la compréhension des profils et des configurations à risque, des analyses multivariées intégrant des interactions entre variables ou des segmentations seraient nécessaires.
 
@@ -238,13 +187,13 @@ Il serait pertinent de recourir à des méthodes de modélisation statistique, t
 
 Cela permettrait de compléter l'analyse par une approche temporelle, en étudiant l'évolution des parcours, de la satisfaction et des comportements de départ dans le temps (limitées du fait de la fictivité des données).
 
-- **Suivi des leviers identifiés dans le temps/ indicateurs**
+- **Suivis des leviers identifiés dans le temps/ indicateurs**
 
 Cela permettrait d'évaluer l'impact des actions mises en œuvre, d'ajuster les dispositifs d'accompagnement et de renforcer une démarche proactive de prévention de l'attrition.
 
----
+***
 
-## Conclusion - So what ?
+## Conclusion – So what ?
 
 Ce projet montre que l'attrition est un phénomène multifactoriel et progressif, résultant de l'interaction entre parcours, conditions de travail et ressenti des salariés.
 
@@ -252,7 +201,18 @@ Une approche RH efficace doit donc dépasser les actions isolées et s'inscrire 
 
 L'analyse exploratoire constitue ainsi une base solide pour orienter des actions RH plus fines et, à terme, des analyses prédictives.
 
----
+***
+
+## Liens des notebooks du projet
+
+1. [Exploration initiale des données](notebooks/01_rh_exploration.ipynb)
+2. [Définition des Axes selon les variables](notebooks/02_create_interim_tableaux.ipynb)
+3. [Axe 1 – Conditions personnelles](notebooks/03_axe_1_conditions_personnelles.ipynb)
+4. [Axe 2 – Conditions de travail](notebooks/04_axe_2_conditions_travail.ipynb)
+5. [Axe 3 – Satisfaction et implication](notebooks/05_axe_3_satisfaction_implication.ipynb)
+6. [Synthèse transversale et recommandations RH](notebooks/06_synthese_transversale_recommandations.ipynb)
+
+***
 
 ## Definition of Done
 
