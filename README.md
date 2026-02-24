@@ -25,7 +25,7 @@ L'approche RH doit ainsi s'inscrire dans une logique de prévention ciblée plut
 
 Pour chaque axe, une analyse exploratoire descriptive a été menée afin de décrire la population, le contexte organisationnel et le ressenti des salariés.
 
-Les variables ont ensuite été croisées avec l'attrition afin d'identifier des différences de comportements et des configurations à risque.
+Les variables ont ensuite été croisées avec l'attrition afin d'identifier des différences de comportement et des configurations à risque.
 
 Une synthèse transversale a enfin permis de relier les axes et de mettre en évidence des dynamiques communes, dans un cadre strictement descriptif et non causal.
 
@@ -111,7 +111,7 @@ Quel est l'impact des conditions de vie personnelles sur le départ des collabor
 Dans quelle mesure les conditions de travail influencent-elles l'attrition ?
 
 - **3. Satisfaction et implication**  
-Comment le niveau de satisfaction et d'implication contribue-t-il à l'attrition ?  
+Comment le niveau de satisfaction et d'implication contribue-t-ils à l'attrition ?  
 Les conditions de travail et les facteurs personnels influencent-ils ces dimensions subjectives ?
 
 ---
@@ -120,8 +120,9 @@ Les conditions de travail et les facteurs personnels influencent-ils ces dimensi
 
 L'analyse repose sur le jeu de données IBM HR Analytics Employee Attrition & Performance, un dataset fictif conçu par IBM, contenant 1 470 employés et plus de 30 variables RH.
 
-Ce jeu de données contient des informations individuelles sur les employés, incluant :
-- des caractéristiques personnelles (âge, genre, statut marital, etc.), 
+Ce jeu de données contient des informations individuelles sur les employés, incluant :
+
+- des caractéristiques personnelles (âge, genre, statut marital, etc.),
 - des variables liées aux conditions de travail (poste, département, ancienneté, rémunération, environnement de travail, etc.),
 - des indicateurs de satisfaction et d'implication,
 - une variable cible indiquant le départ ou non de l'employé (**Attrition**).
@@ -154,7 +155,7 @@ Chaque notebook charge et enregistre les données via des chemins relatifs (`pat
 
 L'attrition ne résulte pas d'un facteur unique, mais de la combinaison :
 
-- De phases de transition du parcours de vie (jeune âge),
+- de phases de transition du parcours de vie (jeune âge),
 - de situations professionnelles peu stabilisées (poste récent, faible ancienneté, relation managériale récente),
 - de conditions organisationnelles spécifiques (notamment la rémunération),
 - et de perceptions subjectives progressivement dégradées (satisfaction, engagement).
@@ -190,11 +191,11 @@ Stabiliser les relations manager-collaborateur, levier clé de satisfaction et d
 - **Modèle managérial et plan de formation**
 Définir un cadre managérial commun (valeurs, posture, pratiques clés) et l'ancrer durablement par la formation.
 
-### Engagement et conditions de travail 
+### Engagement et conditions de travail
 
 - **Reconnaissance non salariale**
 Agir sur les mécanismes intermédiaires de l'attrition (satisfaction, engagement).
-(feedback managérial, reconnaissance symbolique, visibilité des contributions)
+(retour managérial, reconnaissance symbolique, visibilité des contributions)
 
 - **Vigilance sur les heures supplémentaires**
 Limiter les effets cumulatifs dans des situations déjà fragilisées.
@@ -220,9 +221,8 @@ De plus, l'absence de modélisation prédictive ne permet pas d'estimer l'impact
 
 L'analyse s'appuie sur un jeu de données contenant plusieurs variables auto-déclarées. Ces indicateurs peuvent être influencés par des biais de perception ou de déclaration.
 Certaines dimensions importantes ne sont pas mesurées, telles que le climat social, la culture d'entreprise ou la qualité managériale réelle.
-Certaines variables RH structurantes sont également absentes, notamment la distinction entre turnover volontaire et involontaire.
-
-Ce qui implique une lecture prudente des résultats.
+Certaines variables RH structurantes sont également absentes, notamment la distinction entre turnover volontaire et involontaire
+ce qui implique une lecture prudente des résultats.
 
 - **Limites liées au contexte**
 
@@ -236,7 +236,7 @@ Enfin, ces éléments limitent la généralisation des résultats à d'autres or
 
 - **Modélisation logistique / Analyse multivariée ou segmentation**
 
-Il serait pertinent de recourir à des méthodes de modélisation statistique, telles que la régression logistique, afin d'estimer l'effet combiné des facteurs identifiés sur l'attrition. Pour affiner la compréhension des profils et des configurations à risque, des analyses multivariées intégrant des interactions entre variables ou des segmentations seraient nécessaires.
+Il serait pertinent de recourir à des méthodes de modélisation statistique, telles que la régression logistique, afin d'estimer l'effet combiné des facteurs identifiés sur l'attrition . Pour affiner la compréhension des profils et des configurations à risque, des analyses multivariées intégrant des interactions entre variables ou des segmentations seraient nécessaires.
 
 - **Données longitudinales**
 
@@ -258,7 +258,7 @@ L'analyse exploratoire constitue ainsi une base solide pour orienter des actions
 
 ---
 
-## Definition of Done
+## Définition of Done
 
 - Données nettoyées et documentées  
 - Analyse exploratoire descriptive complète  
