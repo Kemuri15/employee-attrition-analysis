@@ -5,10 +5,9 @@
 
 ## TL;DR
 
-L'objectif de ce projet est de comprendre les facteurs associés à l'attrition et de proposer des leviers RH.
+Ce projet explore les dynamiques d’attrition à travers une analyse RH structurée en trois axes : profil des salariés, contexte organisationnel et dimensions subjectives.
 
-L'analyse s'appuie sur trois axes thématiques :
-**Qui part ?**, **Dans quel contexte ?** et **Pourquoi subjectivement ?**.
+Il met en évidence des configurations de risque et propose des leviers de fidélisation, dans un cadre strictement exploratoire et non causal.
 
 Le constat clé est que l'attrition est un phénomène multifactoriel et progressif, résultant de l'interaction entre ces différentes dimensions.
 
@@ -59,8 +58,13 @@ Certaines dimensions structurantes ne sont pas mesurées, ce qui implique une le
 Enfin, le jeu de données étant fictif et limité à un contexte spécifique à un instant donné, la généralisation des résultats reste restreinte.
 
 ### Outils
-Python (pandas, numpy), matplotlib, seaborn, Jupyter Notebook, VS Code.
 
+- Python (pandas, numpy)
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+- VS Code
+  
 ---
 
 ## Liens des notebooks du projet
@@ -70,7 +74,7 @@ Python (pandas, numpy), matplotlib, seaborn, Jupyter Notebook, VS Code.
 3. [Axe 1 – Conditions personnelles](notebooks/03_axe_1_conditions_personnelles.ipynb)
 4. [Axe 2 – Conditions de travail](notebooks/04_axe_2_conditions_travail.ipynb)
 5. [Axe 3 – Satisfaction et implication](notebooks/05_axe_3_satisfaction_implication.ipynb)
-6. [Synthèse transversale et recommandations RH](notebooks/06_synthese_recommandations_sauvegarde.ipynb)
+6. [Synthèse transversale et recommandations RH](notebooks/06_synthese_recommandations.ipynb)
 
 ---
 
@@ -88,7 +92,7 @@ Disposer d'une analyse claire des facteurs d'attrition permet d'orienter les dé
 
 ## Objectif business
 
-Analyser le dataset IBM HR Analytics Employee Attrition & Performance dans le but de comprendre les facteurs associés à l'attrition et d'éclairer les décisions RH et d'orienter les leviers de fidélisation, enjeu essentiel de la performance sociale et globale de l'entreprise.
+Analyser le dataset IBM HR Analytics Employee Attrition & Performance afin d’identifier les facteurs associés à l’attrition et d’orienter les décisions RH en matière de fidélisation.
 
 ---
 
@@ -184,7 +188,7 @@ Améliorer l'expérience collaborateur et renforcer la cohésion et la culture d
 Stabiliser les relations manager-collaborateur, levier clé de satisfaction et d'engagement.
 
 - **Modèle managérial et plan de formation**
-Définir un cadre managérial commun (valeurs, posture, pratiques clés) et à l'ancrer durablement par la formation.
+Définir un cadre managérial commun (valeurs, posture, pratiques clés) et l'ancrer durablement par la formation.
 
 ### Engagement et conditions de travail 
 
@@ -236,9 +240,9 @@ Il serait pertinent de recourir à des méthodes de modélisation statistique, t
 
 - **Données longitudinales**
 
-Cela permettrait de compléter l'analyse par une approche temporelle, en étudiant l'évolution des parcours, de la satisfaction et des comportements de départ dans le temps (limitées du fait de la fictivité des données).
+Cela permettrait de compléter l'analyse par une approche temporelle, en étudiant l'évolution des parcours, de la satisfaction et des comportements de départ dans le temps (limitées par la fictivité des données).
 
-- **Suivi des leviers identifiés dans le temps/ indicateurs**
+- **Suivi des leviers identifiés dans le temps (indicateurs de pilotage)**
 
 Cela permettrait d'évaluer l'impact des actions mises en œuvre, d'ajuster les dispositifs d'accompagnement et de renforcer une démarche proactive de prévention de l'attrition.
 
