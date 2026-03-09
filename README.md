@@ -1,9 +1,11 @@
 # Projet RH - Analyse de l'Attrition et Leviers de Fidélisation
 **Un enjeu clé de performance**
 
+Analyse exploratoire d’un dataset RH visant à identifier les facteurs associés à l’attrition des salariés et à éclairer les leviers potentiels de fidélisation.
+
 ---
 
-## Stack technique
+## 🛠️ Stack technique
 
 - Python  
 - Pandas  
@@ -14,11 +16,18 @@
 
 ---
 
+## Dataset
+
+IBM HR Analytics Employee Attrition & Performance  
+Dataset fictif simulant les données RH d'une entreprise (1470 employés, plus de 30 variables).
+
+---
+
 ## TL;DR
 
 Ce projet explore les dynamiques d’attrition à travers une analyse RH structurée en trois axes : profil des salariés, contexte organisationnel et dimensions subjectives.
 
-Il met en évidence des configurations de risque et propose des leviers de fidélisation, dans un cadre strictement exploratoire et non causal.
+Il met en évidence des configurations de risque et éclaire des leviers de prévention RH., dans un cadre strictement exploratoire et non causal.
 
 Le constat clé est que l'attrition est un phénomène multifactoriel et progressif, résultant de l'interaction entre ces différentes dimensions.
 
@@ -69,14 +78,16 @@ Certaines dimensions structurantes ne sont pas mesurées, ce qui implique une le
 Enfin, le jeu de données étant fictif et limité à un contexte spécifique à un instant donné, la généralisation des résultats reste restreinte.
 
 ---
+
 ##  Installation
 
 Pour reproduire l'analyse localement :
+
 ```bash
 python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
-````
+```
 ---
 
 ## Liens des notebooks du projet
@@ -92,15 +103,18 @@ pip install -r requirements.txt
 
 ## Structure du projet
 
+```
 employee-attrition-analysis
 │
 ├── data/
-│ └── processed/ # données préparées pour l'analyse
-├── notebooks/ # notebooks d'analyse exploratoire
-├── src/ # scripts utilitaires
-├── requirements.txt # dépendances Python
+│   ├── interim/          # données intermédiaires (ex. CSV temporaires)
+│   └── processed/        # données préparées pour l'analyse
+├── notebooks/            # notebooks d'analyse exploratoire
+├── src/                  # scripts utilitaires
+├── requirements.txt      # dépendances Python
 ├── .gitignore
 └── README.md
+```
 
 ---
 
@@ -299,7 +313,8 @@ L'analyse exploratoire constitue ainsi une base solide pour orienter des actions
 ## Auteur
 
 Sandra Doré  
-Data Analyst (reconversion) | Ex-RRH | People Analytics
+Data Analyst | Analyse organisationnelle & données à impact humain  | Ex-Responsable RH
 
-LinkedIn :
+LinkedIn : www.linkedin.com/in/sandradore
+
 ---
