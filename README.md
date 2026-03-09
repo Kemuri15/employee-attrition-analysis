@@ -3,6 +3,17 @@
 
 ---
 
+## Stack technique
+
+- Python  
+- Pandas  
+- NumPy  
+- PyArrow  
+- Matplotlib  
+- Seaborn
+
+---
+
 ## TL;DR
 
 Ce projet explore les dynamiques d’attrition à travers une analyse RH structurée en trois axes : profil des salariés, contexte organisationnel et dimensions subjectives.
@@ -57,14 +68,15 @@ Certaines dimensions structurantes ne sont pas mesurées, ce qui implique une le
 
 Enfin, le jeu de données étant fictif et limité à un contexte spécifique à un instant donné, la généralisation des résultats reste restreinte.
 
-### Outils
+---
+##  Installation
 
-- Python (pandas, numpy)
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-- VS Code
-  
+Pour reproduire l'analyse localement :
+```bash
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+````
 ---
 
 ## Liens des notebooks du projet
@@ -75,6 +87,20 @@ Enfin, le jeu de données étant fictif et limité à un contexte spécifique à
 4. [Axe 2 – Conditions de travail](notebooks/04_axe_2_conditions_travail.ipynb)
 5. [Axe 3 – Satisfaction et implication](notebooks/05_axe_3_satisfaction_implication.ipynb)
 6. [Synthèse transversale et recommandations RH](notebooks/06_synthese_recommandations.ipynb)
+
+--- 
+
+## Structure du projet
+
+employee-attrition-analysis
+│
+├── data/
+│ └── processed/ # données préparées pour l'analyse
+├── notebooks/ # notebooks d'analyse exploratoire
+├── src/ # scripts utilitaires
+├── requirements.txt # dépendances Python
+├── .gitignore
+└── README.md
 
 ---
 
@@ -258,7 +284,7 @@ L'analyse exploratoire constitue ainsi une base solide pour orienter des actions
 
 ---
 
-## Définition of Done
+## Critères de complétion du projet
 
 - Données nettoyées et documentées  
 - Analyse exploratoire descriptive complète  
@@ -266,4 +292,14 @@ L'analyse exploratoire constitue ainsi une base solide pour orienter des actions
 - Relations présentées sans interprétation causale  
 - Visualisations claires  
 - Recommandation RH exploitable
-- Limites méthodologiques explicites  
+- Limites méthodologiques explicites
+
+---
+
+## Auteur
+
+Sandra Doré  
+Data Analyst (reconversion) | Ex-RRH | People Analytics
+
+LinkedIn :
+---
