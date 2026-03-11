@@ -16,9 +16,13 @@ __pycache__/
 # Jupyter Notebook backups
 .ipynb_checkpoints/
 
-# Données
+# Data
 data/raw/
-*.csv
+data/processed/
+*.parquet
+
+data/interim/*
+!data/interim/plan_colonnes_done.csv
 
 # Logs
 *.log
@@ -31,3 +35,4 @@ Thumbs.db
 
 *.html
 *.pdf
+

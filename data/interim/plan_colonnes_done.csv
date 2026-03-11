@@ -1,0 +1,36 @@
+col_initial,axe,garder
+Age,Conditions personnelles,oui
+Attrition,Attrition,oui
+BusinessTravel,Conditions de travail,oui
+DailyRate,Conditions de travail,non
+Department,Conditions de travail,oui
+DistanceFromHome,Conditions personnelles,oui
+Education,Conditions personnelles,oui
+EducationField,Conditions personnelles,oui
+EmployeeCount,Technique,non
+EmployeeNumber,Technique,oui
+EnvironmentSatisfaction,Satisfaction et Implication,oui
+Gender,Conditions personnelles,oui
+HourlyRate,Conditions de travail,non
+JobInvolvement,Satisfaction et Implication,oui
+JobLevel,Conditions de travail,oui
+JobRole,Conditions de travail,oui
+JobSatisfaction,Satisfaction et Implication,oui
+MaritalStatus,Conditions personnelles,oui
+MonthlyIncome,Conditions de travail,oui
+MonthlyRate,Conditions de travail,non
+NumCompaniesWorked,Conditions personnelles,oui
+Over18,Technique,non
+OverTime,Conditions de travail,oui
+PercentSalaryHike,Conditions de travail,oui
+PerformanceRating,Satisfaction et Implication,oui
+RelationshipSatisfaction,Satisfaction et Implication,oui
+StandardHours,Technique,non
+StockOptionLevel,Conditions de travail,oui
+TotalWorkingYears,Conditions de travail,oui
+TrainingTimesLastYear,Conditions de travail,oui
+WorkLifeBalance,Satisfaction et Implication,oui
+YearsAtCompany,Conditions de travail,oui
+YearsInCurrentRole,Conditions de travail,oui
+YearsSinceLastPromotion,Conditions de travail,oui
+YearsWithCurrManager,Conditions de travail,oui
