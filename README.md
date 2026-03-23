@@ -93,7 +93,7 @@ pip install -r requirements.txt
 ## Liens des notebooks du projet
 
 1. [Exploration initiale des données](notebooks/01_rh_exploration.ipynb)
-2. [Définition des Axes selon les variables](notebooks/02_create_interim_tableaux.ipynb)
+2. [Définition des Axes selon les variables](notebooks/02_create_interim_tableaux_axes.ipynb)
 3. [Axe 1 – Conditions personnelles](notebooks/03_axe_1_conditions_personnelles.ipynb)
 4. [Axe 2 – Conditions de travail](notebooks/04_axe_2_conditions_travail.ipynb)
 5. [Axe 3 – Satisfaction et implication](notebooks/05_axe_3_satisfaction_implication.ipynb)
